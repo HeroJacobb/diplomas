@@ -1,0 +1,47 @@
+db.iodef.insert({'RelatedActivity': 'sd', 'History': [{'AdditionalData': 2, 'DateTime': 3}], 'EventData': ['192.168.1.1'], 'ID': 1, 'AlternativeID': 2})
+db.iodef.find()
+show
+showdb
+showdbs
+dbshow
+dbsshow
+dbs
+show dbs
+show db
+show dbs
+db.find
+db.find()
+db.find_one()
+db.iodef.find()
+show collectons
+show collections
+db.iodef.iodef.find
+db.iodef.iodef.find()
+db.iodef.find()
+show dbs
+use test
+show collections
+db.iodef.find
+db.iodef.find()
+use connections
+db.stats.insert({ 'ip_src' :'192.168.1.1','ip_dst' :'192.168.1.2'})
+db.stat.insert({ 'ip_src' :'192.168.1.1','ip_dst' :'192.168.1.2'})
+stat
+db.stat.find
+db.stat.find()
+db.stat.drop
+db.stat.drop()
+db.stat.find()
+db.stat.drop()
+db.stat.find()
+db.stat.find({'srcaddr':"147.102.0.2"})
+db.stat.find({ $exists 'srcaddr':"147.102.0.2"} )
+db.stat.find({ $exists 'srcaddr':"147.102.0.2"}, 'dstaddr': "147.102.0.1" )
+db.stat.find({ 'srcaddr':"147.102.0.2"}, 'dstaddr': "147.102.0.1" )
+db.stat.find({ 'srcaddr':"147.102.0.2", 'dstaddr': "147.102.0.1"} )
+db.stat.find({ 'srcaddr':"147.102.0.2", 'dstaddr': "147.102.0.1"} ,{"_id":1})
+db.stat.find({ 'srcaddr':"147.102.0.2", 'dstaddr': "147.102.0.1"} ,{"_id":1}).limit(1)
+show
+dbshow
+db.getCollectionNames()
+db.iodef.find()

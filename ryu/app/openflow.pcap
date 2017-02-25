@@ -1,0 +1,36 @@
+00:23:55.133582 IP hp-of.netmode.ece.ntua.gr.65376 > mitigation-1.netmode.ece.ntua.gr.6633: Flags [S], seq 1197550736, win 65535, options [mss 1460,nop,wscale 1,nop,nop,sackOK,nop,nop,TS val 2863717806 ecr 0], length 0
+00:23:55.133657 IP mitigation-1.netmode.ece.ntua.gr.6633 > hp-of.netmode.ece.ntua.gr.65376: Flags [S.], seq 2079348791, ack 1197550737, win 28960, options [mss 1460,sackOK,TS val 1500042758 ecr 2863717806,nop,wscale 9], length 0
+00:23:55.134511 IP hp-of.netmode.ece.ntua.gr.65376 > mitigation-1.netmode.ece.ntua.gr.6633: Flags [.], ack 1, win 33304, options [nop,nop,TS val 2863717806 ecr 1500042758], length 0
+00:23:55.135009 IP hp-of.netmode.ece.ntua.gr.65376 > mitigation-1.netmode.ece.ntua.gr.6633: Flags [P.], seq 1:9, ack 1, win 33304, options [nop,nop,TS val 2863717806 ecr 1500042758], length 8: OpenFlow
+	version 1.0, type HELLO, length 8, xid 0x00000044
+00:23:55.135031 IP mitigation-1.netmode.ece.ntua.gr.6633 > hp-of.netmode.ece.ntua.gr.65376: Flags [.], ack 9, win 57, options [nop,nop,TS val 1500042759 ecr 2863717806], length 0
+00:23:55.136397 IP mitigation-1.netmode.ece.ntua.gr.6633 > hp-of.netmode.ece.ntua.gr.65376: Flags [P.], seq 1:9, ack 9, win 57, options [nop,nop,TS val 1500042759 ecr 2863717806], length 8: OpenFlow
+	version 1.0, type HELLO, length 8, xid 0x958909df
+00:23:55.136421 IP mitigation-1.netmode.ece.ntua.gr.6633 > hp-of.netmode.ece.ntua.gr.65376: Flags [P.], seq 9:17, ack 9, win 57, options [nop,nop,TS val 1500042759 ecr 2863717806], length 8: OpenFlow
+	version 1.0, type FEATURES_REQUEST, length 8, xid 0x958909e0
+00:23:55.138559 IP hp-of.netmode.ece.ntua.gr.65376 > mitigation-1.netmode.ece.ntua.gr.6633: Flags [P.], seq 9:473, ack 17, win 33296, options [nop,nop,TS val 2863717806 ecr 1500042759], length 464: OpenFlow
+	version 1.0, type FEATURES_REPLY, length 464, xid 0x958909e0
+00:23:55.141250 IP mitigation-1.netmode.ece.ntua.gr.6633 > hp-of.netmode.ece.ntua.gr.65376: Flags [P.], seq 17:29, ack 473, win 59, options [nop,nop,TS val 1500042760 ecr 2863717806], length 12: OpenFlow
+	version 1.0, type SET_CONFIG, length 12, xid 0x958909e1
+00:23:55.341519 IP hp-of.netmode.ece.ntua.gr.65376 > mitigation-1.netmode.ece.ntua.gr.6633: Flags [.], ack 29, win 33290, options [nop,nop,TS val 2863718016 ecr 1500042760], length 0
+00:23:57.456023 IP mitigation-1.netmode.ece.ntua.gr.6633 > hp-of.netmode.ece.ntua.gr.65376: Flags [P.], seq 29:109, ack 473, win 59, options [nop,nop,TS val 1500043339 ecr 2863718016], length 80: OpenFlow
+	version 1.0, type FLOW_MOD, length 80, xid 0x958909e2
+00:23:57.458608 IP hp-of.netmode.ece.ntua.gr.65376 > mitigation-1.netmode.ece.ntua.gr.6633: Flags [P.], seq 473:549, ack 109, win 33250, options [nop,nop,TS val 2863720126 ecr 1500043339], length 76: OpenFlow
+	version 1.0, type ERROR, length 76, xid 0x958909e2
+00:23:57.494863 IP mitigation-1.netmode.ece.ntua.gr.6633 > hp-of.netmode.ece.ntua.gr.65376: Flags [.], ack 549, win 59, options [nop,nop,TS val 1500043349 ecr 2863720126], length 0
+00:24:07.133289 IP hp-of.netmode.ece.ntua.gr.65376 > mitigation-1.netmode.ece.ntua.gr.6633: Flags [P.], seq 549:557, ack 109, win 33250, options [nop,nop,TS val 2863729806 ecr 1500043349], length 8: OpenFlow
+	version 1.0, type ECHO_REQUEST, length 8, xid 0x00000000
+00:24:07.133351 IP mitigation-1.netmode.ece.ntua.gr.6633 > hp-of.netmode.ece.ntua.gr.65376: Flags [.], ack 557, win 59, options [nop,nop,TS val 1500045758 ecr 2863729806], length 0
+00:24:07.134102 IP mitigation-1.netmode.ece.ntua.gr.6633 > hp-of.netmode.ece.ntua.gr.65376: Flags [P.], seq 109:117, ack 557, win 59, options [nop,nop,TS val 1500045758 ecr 2863729806], length 8: OpenFlow
+	version 1.0, type ECHO_REPLY, length 8, xid 0x00000000
+00:24:07.331642 IP hp-of.netmode.ece.ntua.gr.65376 > mitigation-1.netmode.ece.ntua.gr.6633: Flags [.], ack 117, win 33246, options [nop,nop,TS val 2863730006 ecr 1500045758], length 0
+00:24:17.132984 IP hp-of.netmode.ece.ntua.gr.65376 > mitigation-1.netmode.ece.ntua.gr.6633: Flags [P.], seq 557:565, ack 117, win 33246, options [nop,nop,TS val 2863739806 ecr 1500045758], length 8: OpenFlow
+	version 1.0, type ECHO_REQUEST, length 8, xid 0x00000000
+00:24:17.133588 IP mitigation-1.netmode.ece.ntua.gr.6633 > hp-of.netmode.ece.ntua.gr.65376: Flags [P.], seq 117:125, ack 565, win 59, options [nop,nop,TS val 1500048258 ecr 2863739806], length 8: OpenFlow
+	version 1.0, type ECHO_REPLY, length 8, xid 0x00000000
+00:24:17.331865 IP hp-of.netmode.ece.ntua.gr.65376 > mitigation-1.netmode.ece.ntua.gr.6633: Flags [.], ack 125, win 33242, options [nop,nop,TS val 2863740006 ecr 1500048258], length 0
+00:24:23.707201 IP mitigation-1.netmode.ece.ntua.gr.6633 > hp-of.netmode.ece.ntua.gr.65376: Flags [F.], seq 125, ack 565, win 59, options [nop,nop,TS val 1500049902 ecr 2863740006], length 0
+00:24:23.709951 IP hp-of.netmode.ece.ntua.gr.65376 > mitigation-1.netmode.ece.ntua.gr.6633: Flags [.], ack 126, win 33241, options [nop,nop,TS val 2863746376 ecr 1500049902], length 0
+00:24:23.710702 IP hp-of.netmode.ece.ntua.gr.65376 > mitigation-1.netmode.ece.ntua.gr.6633: Flags [FP.], seq 565, ack 126, win 33241, options [nop,nop,TS val 2863746376 ecr 1500049902], length 0
+00:24:23.710738 IP mitigation-1.netmode.ece.ntua.gr.6633 > hp-of.netmode.ece.ntua.gr.65376: Flags [.], ack 566, win 59, options [nop,nop,TS val 1500049902 ecr 2863746376], length 0
+

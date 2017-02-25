@@ -1,0 +1,58 @@
+#!/usr/bin/python
+
+from mininet.net import Mininet
+from mininet.node import Controller, RemoteController
+from mininet.cli import CLI
+from mininet.log import setLogLevel, info
+
+def myNet():
+
+
+    #c1
+    c1='192.168.1.1'
+
+    #c2
+    c2='192.168.1.2'
+
+    net = Mininet( topo=None, build=False)
+
+    # Create nodes
+    h1 = net.addHost( 'h1', mac='01:00:00:00:01:00', ip='137.102.0.101/24' )
+    h2 = net.addHost( 'h2', mac='01:00:00:00:02:00', ip='137.102.0.102/24' )
+    h3 = net.addHost( 'h3', mac='01:00:00:00:03:00', ip='11.102.0.101/24'  )
+    h4 = net.addHost( 'h4', mac='01:00:00:00:04:00', ip='11.102.0.102/24'  )
+
+    # Create switches
+    s1 = net.addSwitch( 's1', listenPort=6634, mac='00:00:00:00:00:01' )
+    s2 = net.addSwitch( 's2', listenPort=6634, mac='00:00:00:00:00:02' )
+
+    print "*** Creating links"
+    net.addLink(h1, s1, )
+    net.addLink(h2, s1, )   
+    net.addLink(h3, s2, )
+    net.addLink(h4, s2, )  
+
+    # Add Controllers
+    c_1 = net.addController( 'c1', controller=RemoteController, ip=c1, port=6633)
+
+    c_2 = net.addController( 'c2', controller=RemoteController, ip=c2, port=6633)
+
+
+    net.build()
+
+    # Connect each switch to a different controller
+    s1.start( [c_1] )
+    s2.start( [c_2] )
+
+    s1.cmdPrint('ovs-vsctl show')
+    h1.cmd('ip route add 0.0.0.0/0 via 137.102.0.1')
+    h2.cmd('ip route add 0.0.0.0/0 via 137.102.0.1')
+    h3.cmd('ip route add 0.0.0.0/0 via 11.102.0.1')
+    h4.cmd('ip route add 0.0.0.0/0 via 11.102.0.1')
+
+    CLI( net )
+    net.stop()
+
+if __name__ == '__main__':
+    setLogLevel( 'info' )
+    myNet()
