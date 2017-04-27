@@ -140,8 +140,11 @@ class Bgp_sender(app_manager.RyuApp):
 	#self.speaker.out_filter_set('2.1.1.2',[alla])
 	#self.drop_to_router(AC(1000).create())
         #self.speaker.
-	eventlet.sleep(20)
-	self.drop_to_router(['21.0.0.0/8'])
+	#eventlet.sleep(20)
+	#self.drop_to_router(['147.102.13.199/32'])
+	ofs=Switch()
+  	eventlet.sleep(40)
+	ofs.add_flow("147.102.13.199")
 	"""
 	ofs=Switch()
         while True:
